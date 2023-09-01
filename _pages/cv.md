@@ -44,4 +44,9 @@ genetics, statistical analysis and machine learning.</font></div>
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
- 
+
+## Awards
+<hr>
+• The [Genetics Society](https://genetics.org.uk/) Conference ECR Grant Scheme (2023)
+* The [Guarantors of Brain](https://guarantorsofbrain.org/) travel grat (2023)
+• Prize for Computational Reproducibility in Dementia Research (2023)
