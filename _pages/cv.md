@@ -6,54 +6,42 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-
+<hr>
 {% include base_path %}
 
-Education
-======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+## Education
+<hr>
+* Ph.D in Computational Biology, Brain Sciences, Imperial College London, 2025 (expected)
+* M.S. Bioinformatics and Computational Genomics, Queen's University, 2020
+* B.S. Management Science and Information Systems, Trinity College Dublin, 2017 
 
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+## Experience
+<hr>
+* <b>PhD Brain Sciences</b> - UK Dementia Research Institute Neurogenomics Lab, Imperial College London <b>(current)</b><br>
+	<div style="text-align: justify"><font size="3">Undertaking a PhD with Dr. Nathan Skene in the UK DRI Neurogenomics Lab at Imperial College London. My PhD is based around the predicting cell type-specific, regulatory effects of genetic variants in neurodegenerative diseases with a primary focus on Alzheimer’s disease. Supervised numerous masters and undergraduate students across a broad range of computational biology projects including
+genetics, statistical analysis and machine learning.</font></div>
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* <b>Research Assistant</b> - UK Dementia Research Institute Neurogenomics Lab, Imperial College London <b>(2021)</b><br>
+	<div style="text-align: justify"><font size="3">Undertook a bioinformaticians role working under Dr. Nathan Skene in the UK DRI Neurogenomics Lab at Imperial College London. My role included the development of novel pipelines for the analysis of these differing omic types along with the development of computational genomic tools and associated R packages for submission to Bioconductor.</font></div>
 
-Publications
-======
+* <b>Research Assistant</b> - Overton Group, Queen’s University Belfast <b>(2020)</b><br>
+	<div style="text-align: justify"><font size="3">Expanded on the research from my master’s thesis, developing a systems biology, machine learning framework to uncover the instigated molecular players in differing biological contexts. Created a multi-purpose, run time and memory efficient R package and applied the framework to multi-omic data from differing cellular processes and disease states. Utilised parallel computing functionality, a high performance compute cluster and advanced machine learning methodologies including one-class classification. This was coupled with prior biological knowledge through known interactions from pathway databases. Also investigated the biological relevance of the uncovered molecular networks in the differing states through network biology approaches.</font></div>
+
+* <b>Data Analytics Consultant</b> - Pricewaterhouse Coopers (PwC) <b>(2017)</b><br>
+	<div style="text-align: justify"><font size="3">Led multiple projects across a wide variety of engagements. An experienced manager, with the ability to get the best results from the team under pressing timelines. A technical approach, using advanced analytical techniques, married with an understanding of the business’s needs has been proven in all engagements. Practiced in completing all aspects of data analytics pipelines from investigation, ETL, cleansing, analysis, modelling, insight and the development and deployment of automated solutions. Tangible results for projects including correcting over €30 million worth of loans that were in arrears in one of Irelands largest banks and increasing the success rate of targeted enforcement in a public sector body by over 15%.</font></div>
+
+* <b>Data Analyst</b> - Aon Centre for Innovation and Analytics (ACIA) <b>(2016)</b><br>
+	<div style="text-align: justify"><font size="3">Gained real-world experience in data analytics, decision making and applied statistics as well as developing an understanding of best practice project management. Undertook projects to design, develop and implement an in-house skills matrix system for senior management, giving insights into employee utilization and predicting possible future skill shortages.</font></div>
+
+## Selected Publications
+<hr>
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
+## Teaching
+<hr>
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+ 

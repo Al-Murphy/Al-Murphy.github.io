@@ -13,7 +13,7 @@ redirect_from:
 &nbsp;
 &nbsp;
 <div style="text-align: justify">
-Hey, I'm Alan, a computational biologist undertaking my PhD in <a href="https://www.neurogenomics.co.uk/">Dr. Nathan Skene's group</a> in the <a href="https://ukdri.ac.uk/">UK Dementia Research Institute (UK DRI)</a> at the Department of Brain Sciences, Imperial College London. I use machine learning to help use understand how genetics, epigenetics and transcriptomics interact in disease settings and to understand fundamental cellular mechanisms such as gene regulation. I'm committed to promoting reproducbility and transparency through the development of open-access bioinformatic tools. Outside of research, I'm equally obsessive over food, craft beer and coffee. If you ever need to kill an hour, mention one of these.
+Hey, I'm Alan, a computational biologist undertaking my PhD in <a href="https://www.neurogenomics.co.uk/">Dr. Nathan Skene's group</a> in the <a href="https://ukdri.ac.uk/">UK Dementia Research Institute (UK DRI)</a> at the Department of Brain Sciences, Imperial College London. I use machine learning to help us understand how genetics, epigenetics and transcriptomics interact in disease settings and to understand fundamental cellular mechanisms, such as gene regulation. I'm committed to promoting reproducbility and transparency through the development of open-access bioinformatic tools. Outside of research, I'm equally obsessive over food, craft beer and coffee. If you ever need to kill an hour, mention one of these to me.
 </div>
 &nbsp;
 ## News
@@ -34,3 +34,8 @@ Hey, I'm Alan, a computational biologist undertaking my PhD in <a href="https://
 19th Jul, 2021&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thrilled to offically start my PhD with <a href="https://www.neurogenomics.co.uk/">Dr. Nathan Skene's group</a> in the Department &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of Brain Sciences, Imperial College London as part of the <a href="https://ukdri.ac.uk/">UK DRI</a>!
 <br>
 </font>
+
+## Selected Publications
+  <ul>{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
