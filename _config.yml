@@ -110,13 +110,13 @@ author:
   steam            :
   tumblr           :
   twitter          : "https://twitter.com/Al_Murphy_"
+  bluesky          : "https://bsky.app/profile/al-murphy.bsky.social" # Replace this with you Bluesky username
   mastodon	   : "https://mastodon.social/@Al_Murphy_@genomic.social"
   vine             :
   weibo            :
   xing             :
   youtube          :
   wikipedia        :
-
 
 # Reading Files
 include:
