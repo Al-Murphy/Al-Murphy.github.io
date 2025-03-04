@@ -13,12 +13,15 @@ redirect_from:
 &nbsp;
 &nbsp;
 <div style="text-align: justify">
-Hey, I'm Alan, a computational biologist undertaking my PhD in <a href="https://www.neurogenomics.co.uk/">Dr. Nathan Skene's group</a> in the <a href="https://ukdri.ac.uk/">UK Dementia Research Institute (UK DRI)</a> at the Department of Brain Sciences, Imperial College London. I use machine learning to help us understand how genetics, epigenetics and transcriptomics interact in disease settings and to understand fundamental cellular mechanisms, such as gene regulation. I'm committed to promoting reproducbility and transparency through the development of open-access bioinformatic tools. Outside of research, I'm equally obsessive over food, craft beer and coffee. If you ever need to kill an hour, mention one of these to me.
+Hey, I'm Alan, a computational biologist undertaking my postdoctorial training in <a href="https://koolab.cshl.edu/">Dr. Peter Koo's group</a> at Cold Spring Harbor Labs. I develop new techniques to improve genomic deep learning models to help us understand how genetics, epigenetics and transcriptomics interact in disease settings and to understand fundamental cellular mechanisms, such as gene regulation. I'm committed to promoting reproducbility and transparency through the development of open-access bioinformatic tools. Outside of research, I'm equally obsessive over food, craft beer and coffee. If you ever need to kill an hour, mention one of these to me.
 </div>
 &nbsp;
 ## News
 [//]: # (To format news, you need to tab in as so, you can get 80 characters per tabbed line, also because of font size change, markdown formatting won't work so use HTML)
 <font size="3">
+3rd Mar, 2025&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Joined <a href="https://koolab.cshl.edu/">Peter Koo's group</a> at Cold Spring Harbor Labs, New York to develop methods to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;improve current genomic sequence-to-function and genomic language models.
+<br>
+<br>
 11th Dec, 2024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our <a href="https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkae1212/7921050">ChromExpress paper</a> investigating the relationship of histone marks &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with expression using deep learning is out in <i>Nucleic Acids Research (NAR)</i>! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; See our quick overview <a href="https://x.com/Al_Murphy_/status/1774015627784487292">on Twitter</a>.
 <br>
 <br>
