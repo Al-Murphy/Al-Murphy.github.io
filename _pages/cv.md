@@ -17,8 +17,11 @@ redirect_from:
 
 ## Experience
 <hr>
-* <b>PhD Brain Sciences</b> - UK Dementia Research Institute Neurogenomics Lab, Imperial College London <b>(current)</b><br>
-	<div style="text-align: justify"><font size="3">Undertaking a PhD with Dr. Nathan Skene in the UK DRI Neurogenomics Lab at Imperial College London. My PhD is based around the predicting cell type-specific, regulatory effects of genetic variants in neurodegenerative diseases with a primary focus on Alzheimer’s disease. Supervised numerous masters and undergraduate students across a broad range of computational biology projects including
+* <b>Post-doc Deep Learning for Genomics</b> - Koo Lab, Cold Spring Harbor Labs (CSHL), New York <b>(current)</b><br>
+        <div style="text-align: justify"><font size="3">Undertaking a Post-doc with Dr. Peter Koo to work on improving deep learning models for genomics to advance our understanding of the cis-regulatory code.</font></div>
+
+* <b>PhD Brain Sciences</b> - UK Dementia Research Institute Neurogenomics Lab, Imperial College London <br>
+	<div style="text-align: justify"><font size="3">Undertaking a PhD with Dr. Nathan Skene in the UK DRI Neurogenomics Lab at Imperial College London. My PhD was based around the predicting cell type-specific, regulatory effects of genetic variants in neurodegenerative diseases with a primary focus on Alzheimer’s disease. Supervised numerous masters and undergraduate students across a broad range of computational biology projects including
 genetics, statistical analysis and machine learning.</font></div>
 
 * <b>Research Assistant</b> - UK Dementia Research Institute Neurogenomics Lab, Imperial College London <b>(2021)</b><br>
