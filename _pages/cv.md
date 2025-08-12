@@ -18,7 +18,7 @@ redirect_from:
 ## Experience
 <hr>
 * <b>Post-Doc Deep Learning for Genomics</b> - Koo Lab, Cold Spring Harbor Labs (CSHL), New York <b>(current)</b><br>
-        <div style="text-align: justify"><font size="3">Undertaking a post-doc with Dr. Peter Koo to work on improving deep learning models for genomics, to advance our understanding of the cis-regulatory code. 
+	<div style="text-align: justify"><font size="3">Undertaking a post-doc with Dr. Peter Koo to work on improving deep learning models for genomics, to advance our understanding of the cis-regulatory code. 
 The work focuses on how to improve such models' causal understanding of regulatory elements.</font></div>
 
 * <b>PhD Brain Sciences</b> - UK Dementia Research Institute Neurogenomics Lab, Imperial College London <b>(2021)</b><br>
