@@ -11,16 +11,17 @@ redirect_from:
 
 ## Education
 <hr>
-* Ph.D in Computational Biology, Brain Sciences, Imperial College London, 2025 (expected)
+* Ph.D in Computational Biology, Brain Sciences, Imperial College London, 2025
 * M.S. Bioinformatics and Computational Genomics, Queen's University, 2020
 * B.S. Management Science and Information Systems, Trinity College Dublin, 2017 
 
 ## Experience
 <hr>
-* <b>Post-doc Deep Learning for Genomics</b> - Koo Lab, Cold Spring Harbor Labs (CSHL), New York <b>(current)</b><br>
-        <div style="text-align: justify"><font size="3">Undertaking a Post-doc with Dr. Peter Koo to work on improving deep learning models for genomics to advance our understanding of the cis-regulatory code.</font></div>
+* <b>Post-Doc Deep Learning for Genomics</b> - Koo Lab, Cold Spring Harbor Labs (CSHL), New York <b>(current)</b><br>
+        <div style="text-align: justify"><font size="3">Undertaking a post-doc with Dr. Peter Koo to work on improving deep learning models for genomics, to advance our understanding of the cis-regulatory code. 
+The work focuses on how to improve such models' causal understanding of regulatory elements.</font></div>
 
-* <b>PhD Brain Sciences</b> - UK Dementia Research Institute Neurogenomics Lab, Imperial College London <br>
+* <b>PhD Brain Sciences</b> - UK Dementia Research Institute Neurogenomics Lab, Imperial College London <b>(2021)</b><br>
 	<div style="text-align: justify"><font size="3">Undertaking a PhD with Dr. Nathan Skene in the UK DRI Neurogenomics Lab at Imperial College London. My PhD was based around the predicting cell type-specific, regulatory effects of genetic variants in neurodegenerative diseases with a primary focus on Alzheimer’s disease. Supervised numerous masters and undergraduate students across a broad range of computational biology projects including
 genetics, statistical analysis and machine learning.</font></div>
 
