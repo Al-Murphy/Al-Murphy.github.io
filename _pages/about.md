@@ -13,7 +13,7 @@ redirect_from:
 &nbsp;
 &nbsp;
 <div style="text-align: justify">
-Hey, I'm Alan, a computational biologist undertaking my postdoctorial training in <a href="https://koolab.cshl.edu/">Dr. Peter Koo's group</a> at Cold Spring Harbor Labs. I develop new techniques to improve genomic deep learning models to help us understand how genetics, epigenetics and transcriptomics interact in disease settings and to understand fundamental cellular mechanisms, such as gene regulation. I'm committed to promoting reproducbility and transparency through the development of open-access bioinformatic tools. Outside of research, I'm equally obsessive over food, craft beer and coffee. If you ever need to kill an hour, mention one of these to me.
+Hey, I'm Alan, a computational biologist undertaking my postdoctorial training in <a href="https://koolab.cshl.edu/">Dr. Peter Koo's group</a> at Cold Spring Harbor Labs. I develop new techniques to improve genomic deep learning models to help us understand how genetics, epigenetics and transcriptomics interact in disease settings and to understand fundamental cellular mechanisms, such as gene regulation. I'm committed to promoting reproducibility and transparency through the development of open-access bioinformatic tools. Outside of research, I'm equally obsessive over food, craft beer and coffee. If you ever need to kill an hour, mention one of these to me.
 </div>
 &nbsp;
 ## News
