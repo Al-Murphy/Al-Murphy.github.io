@@ -10,4 +10,4 @@ location: "Imperial College London"
 
 A computational biology programme, covering programming for bioinformatics, statistics and machine learning and deep learning.
 
-Undertook a technical assistant (TA) position working in this course provided by Dr. Justin Kinney.
+Undertook a technical assistant (TA) position working in this course provided by [Dr. Justin Kinney](https://facultyprofiles.cshl.edu/justin.kinney).
