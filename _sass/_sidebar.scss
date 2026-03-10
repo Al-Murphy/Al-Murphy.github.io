@@ -146,8 +146,22 @@
   border-top: 1px solid $border-color;
 }
 
-.sidebar__right .twitter-timeline {
+.sidebar__right .sidebar__tweets {
   margin-top: 0.5em;
+
+  .twitter-tweet {
+    margin-bottom: 1em;
+    max-width: 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  /* Twitter embeds render as iframes - ensure they fit the sidebar */
+  iframe {
+    max-width: 100% !important;
+  }
 }
 
 /*
