@@ -188,6 +188,11 @@
   max-width: none;
 }
 
+/* Publications are in main content area; sidebar is separate flex column - don't add extra padding */
+.page__content .publications-scroll .list__item {
+  padding-right: 0;
+}
+
 .page__hero {
   position: relative;
   margin-bottom: 2em;
