@@ -140,6 +140,16 @@
   margin-bottom: 0;
 }
 
+.sidebar__right .sidebar__title--tweets {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid $border-color;
+}
+
+.sidebar__right .twitter-timeline {
+  margin-top: 0.5em;
+}
+
 /*
    Author profile and links
    ========================================================================== */
