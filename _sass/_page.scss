@@ -23,14 +23,28 @@
     @include suffix(2 of 12);
   }
 
-  .page__inner-wrap {
-    @include full();
-
-    .page__content,
-    .page__meta,
-    .page__share {
-      @include full();
+  /* When right sidebar is present, article shares space with right panel */
+  &.page--with-sidebar-right {
+    @include breakpoint($large) {
+      flex: 1;
+      min-width: 0;
+      width: auto;
+      float: none;
+      margin-left: 0;
+      margin-right: 0;
     }
+  }
+}
+
+/* Wrapper for main content + right sidebar */
+.page-with-right-sidebar {
+  @include breakpoint($large) {
+    @include span(10 of 12 last);
+    @include prefix(0.5 of 12);
+    @include suffix(2 of 12);
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
   }
 }
 
@@ -105,6 +119,73 @@
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
+}
+
+/* Homepage news list */
+.page__content .news-list {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0 0.5rem 0 0;
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.page__content .news-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.6rem;
+}
+
+.page__content .news-date {
+  font-weight: 600;
+  margin-right: 0.75rem;
+  min-width: 8rem;
+}
+
+.page__content .news-body {
+  flex: 1 1 15rem;
+}
+
+/* Homepage top buttons */
+.home-button-row {
+  text-align: center;
+  margin: 1.5rem 0 2rem;
+}
+
+.home-button-row .btn {
+  background-color: #0b3c5d;
+  border-color: #0b3c5d;
+  color: #fff;
+  margin: 0 0.35rem 0.5rem;
+}
+
+.home-button-row .btn:hover,
+.home-button-row .btn:focus {
+  background-color: #07263a;
+  border-color: #07263a;
+  color: #fff;
+}
+
+/* Scrollable publications section */
+.page__content .publications-note {
+  font-size: $type-size-6;
+  font-style: italic;
+}
+
+.page__content .publications-scroll {
+  max-height: 260px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.page__content .publications-scroll .archive__item {
+  max-width: none;
+}
+
+.page__content .publications-scroll .archive__item-title,
+.page__content .publications-scroll .archive__item-excerpt {
+  max-width: none;
 }
 
 .page__hero {

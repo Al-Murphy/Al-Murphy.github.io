@@ -70,6 +70,74 @@
   @include breakpoint($x-large) {
     width: $right-sidebar-width;
   }
+
+  /* When inside flex container (page-with-right-sidebar) */
+  .page-with-right-sidebar & {
+    @include breakpoint($large) {
+      float: none;
+      flex: 0 0 $right-sidebar-width-narrow;
+      margin-left: 0;
+    }
+
+    @include breakpoint($x-large) {
+      flex: 0 0 $right-sidebar-width;
+    }
+  }
+}
+
+/* Genomics × AI blog sidebar content */
+.sidebar__right .sidebar__title {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-size: $type-size-5;
+  font-family: $sans-serif-narrow;
+}
+
+.sidebar__right .sidebar__intro {
+  font-size: $type-size-6;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.sidebar__right .sidebar__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar__right .sidebar__item {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid $border-color;
+
+  &:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0.5em;
+  }
+}
+
+.sidebar__right .sidebar__link {
+  display: block;
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.sidebar__right .sidebar__meta {
+  display: block;
+  font-size: $type-size-7;
+  color: $gray;
+  margin-top: 0.25em;
+}
+
+.sidebar__right .sidebar__more {
+  font-size: $type-size-6;
+  margin-top: 1em;
+  margin-bottom: 0;
 }
 
 /*

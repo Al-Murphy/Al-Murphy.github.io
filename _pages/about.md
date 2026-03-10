@@ -3,56 +3,66 @@ permalink: /
 title: "Alan Murphy"
 excerpt: "About me"
 author_profile: true
+sidebar_right: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-<font size="3">Computational Biologist, Post-doc, Cold Spring Harbor Labs, New York</font>
+<font size="3">Computational Biologist | Postdoctoral Researcher, Cold Spring Harbor Laboratory, New York</font>
 
-[//]: # (Using empty lines with tabs to create space lines)
 &nbsp;
 &nbsp;
+
 <div style="text-align: justify">
-Hey, I'm Alan, a computational biologist undertaking my postdoctorial training in <a href="https://koolab.cshl.edu/">Dr. Peter Koo's group</a> at Cold Spring Harbor Labs. I develop new techniques to improve genomic deep learning models to help us understand how genetics, epigenetics and transcriptomics interact in disease settings and to understand fundamental cellular mechanisms, such as gene regulation. I'm committed to promoting reproducibility and transparency through the development of open-access bioinformatic tools. Outside of research, I'm equally obsessive over food, craft beer and coffee. If you ever need to kill an hour, mention one of these to me.
+Hi, I'm Alan Murphy, a computational biologist conducting my postdoctoral research in <a href="https://koolab.cshl.edu/">Dr. Peter Koo's lab</a> at Cold Spring Harbor Laboratory. My research focuses on developing and refining <strong>sequence-to-function (seq2func) models</strong> that uncover the <strong>cis-regulatory code</strong> — the rules by which DNA sequence dictates gene regulatory activity — and that are interpretable, generalisable across contexts, and tightly coupled to experimental perturbations and functional readouts.
+
+Beyond research, I co-created and serve as editor for the <a href="https://genomicsxai.github.io/">Genomics × AI</a> blog, a growing community hub highlighting methods and applications at the intersection of genomics and machine learning. This initiative reflects my dedication to <strong>scholarly leadership and knowledge sharing</strong> in computational biology.
+
 </div>
+
 &nbsp;
+
+## Research Vision & Impact
+
+I aim to uncover the <strong>cis-regulatory code</strong> — the rules by which DNA sequence dictates gene regulation — by developing <strong>interpretable, generalisable sequence-to-function (seq2func) models</strong>. My work integrates <strong>computational modeling and experimental perturbations</strong>, including functional assays, to systematically probe how regulatory sequences control cellular phenotypes.
+
+Key goals of my research include:
+
+- Building models that <strong>generalise across cell types and experimental contexts</strong>, enabling predictive insights beyond the training data.  
+- Improving <strong>interpretability</strong>, so that computational predictions reveal mechanistic principles of gene regulation.  
+- Developing <strong>open-access tools and resources</strong> to promote reproducibility and empower the genomics community.
+
+Through this approach, I seek to <strong>bridge predictive modeling with mechanistic understanding</strong>, advancing both fundamental insights into gene regulation and the methodological foundations of regulatory genomics.
+
+&nbsp;
+
+<p class="home-button-row">
+  <a class="btn" href="/cv/" target="_blank" rel="noopener">Download CV</a>
+  <a class="btn" href="https://scholar.google.com/citations?user=oH1tIr0AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+  <a class="btn" href="https://genomicsxai.github.io/" target="_blank" rel="noopener">Genomics × AI Blog</a>
+</p>
+
+&nbsp;
+
 ## News
-[//]: # (To format news, you need to tab in as so, you can get 80 characters per tabbed line, also because of font size change, markdown formatting won't work so use HTML)
-<font size="3">
-10th Sep, 2025&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presented our work on causal refinement for genomic deep learning models &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;through Continual Learning at MLCB 2025. Check out the talk on the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.youtube.com/live/19I7xTh5Qb4?si=deSADd9vZB65yWBC&t=7019">MLCB youtube</a>.
-<br>
-<br>
-3rd Mar, 2025&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Joined <a href="https://koolab.cshl.edu/">Peter Koo's group</a> at Cold Spring Harbor Labs, New York to develop &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;methods to improve current genomic sequence-to-function and genomic language &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;models.
-<br>
-<br>
-11th Dec, 2024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our <a href="https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkae1212/7921050">ChromExpress paper</a> investigating the relationship of histone marks &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with expression using deep learning is out in <i>Nucleic Acids Research (NAR)</i>! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; See our quick overview <a href="https://x.com/Al_Murphy_/status/1774015627784487292">on Twitter</a>.
-<br>
-<br>
-16th Nov, 2024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our <a href="https://www.nature.com/articles/s41467-024-54441-5">Enformer Celltyping paper</a> a genomic DNN to accurately predict epigenetic &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; signals in previously unseen cell types is out in <i>Nature Comms</i>! 
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; See more <a href="https://twitter.com/Al_Murphy_/status/1858432627654443083">on Twitter</a> or <a href="https://bsky.app/profile/al-murphy.bsky.social/post/3lb7kho6uxk2p">on BlueSky</a>.
-<br>
-<br>
-4th Dec, 2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our <a href="https://elifesciences.org/articles/90214">re-analysis paper</a> of the first single-cell RNA-Seq Alzheimer's disease &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; is out in <i>eLife</i>! Check out an overview <a href="https://twitter.com/Al_Murphy_/status/1642853631652253696">here</a>.
-<br>
-<br>
-25th Sep, 2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presented my PhD work predicting the cell type-specific effects of genetic &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;variants on the epigenome at the <a href="http://kipoi.org/summit/">Kipoi Summit</a> for computational regulatory &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;computational genomics.
-<br>
-<br>
-29th Jul, 2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presented a session on single-cell genomics for Alzheimer's disease as part of &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.alzheimersdata.org/ad-workbench">ADDI's</a> Summer Learning Series.
-<br>
-<br>
-22nd Dec, 2022&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our <a href="https://www.nature.com/articles/s41467-022-35519-4">paper</a> benchmarking differential expression methods for single-cell &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RNA-Seq is out in <i>Nature Communications</i>! Check out our overview <a href="https://twitter.com/Al_Murphy_/status/1495347819561029633">here</a>.
-<br>
-<br>
-2nd Oct, 2021&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/neurogenomics/MungeSumstats">MungeSumstats</a> our software for the rapid standardisation and quality control of &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GWAS or QTL summary statistics is <a href="https://academic.oup.com/bioinformatics/article/37/23/4593/6380562">now out</a> in <i>Bioinformatics</i>!
-<br>
-<br>
-19th Jul, 2021&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thrilled to offically start my PhD with <a href="https://www.neurogenomics.co.uk/">Dr. Nathan Skene's group</a> in the Department &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of Brain Sciences, Imperial College London as part of the <a href="https://ukdri.ac.uk/">UK DRI</a>!
-<br>
-</font>
+<ul class="news-list">
+  {% for item in site.data.news %}
+    <li class="news-item">
+      <span class="news-date">{{ item.date }}</span>
+      <span class="news-body">{{ item.body | markdownify }}</span>
+    </li>
+  {% endfor %}
+</ul>
 
 ## Selected Publications
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+<p class="publications-note">
+  This is a selection of recent work. For a complete and always up-to-date list, see my
+  <a href="https://scholar.google.com/citations?user=oH1tIr0AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar profile</a>.
+</p>
+<div class="publications-scroll">
+  <ul>
+    {% for post in site.publications %}
+      {% include archive-single-cv.html %}
+    {% endfor %}
+  </ul>
+</div>

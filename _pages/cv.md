@@ -51,5 +51,6 @@ genetics, statistical analysis and machine learning.</font></div>
 
 ## Awards
 <hr>
+* Outstanding TA Award, Cold Spring Harbor Laboratory (2025)
 * The [Genetics Society](https://genetics.org.uk/) Conference ECR Grant Scheme (2023)
 * The [Guarantors of Brain](https://guarantorsofbrain.org/) travel grant (2023)

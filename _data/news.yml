@@ -1,0 +1,32 @@
+- date: "2026-02-20"
+  body: "Published a blog post on fine-tuning [AlphaGenome](https://genomicsxai.github.io/blogs/2026-002/) for MPRA and STARR-seq data on the Genomics x AI blog, highlighting the approach of treating sequence-to-function models as modular regulatory encoders leading to state-of-the-art results across perturbation assays."
+
+- date: "2025-10-10"
+  body: "Presented our work on causal refinement for genomic deep learning models through continual learning at MLCB 2025. Check out the talk on the [MLCB YouTube channel](https://www.youtube.com/live/19I7xTh5Qb4?si=deSADd9vZB65yWBC&t=7019)."
+
+- date: "2025-03-03"
+  body: "Joined [Peter Koo's group](https://koolab.cshl.edu/) at Cold Spring Harbor Laboratory, New York to develop methods to improve genomic sequence-to-function and genomic language models."
+
+- date: "2024-12-11"
+  body: "Our [ChromExpress paper](https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkae1212/7921050) investigating the relationship of histone marks with expression using deep learning is out in *Nucleic Acids Research (NAR)*! See a quick overview [on X/Twitter](https://x.com/Al_Murphy_/status/1774015627784487292)."
+
+- date: "2024-11-16"
+  body: "Our [Enformer Celltyping paper](https://www.nature.com/articles/s41467-024-54441-5), a genomic DNN to accurately predict epigenetic signals in previously unseen cell types, is out in *Nature Communications*! See more [on Twitter](https://twitter.com/Al_Murphy_/status/1858432627654443083) or [on BlueSky](https://bsky.app/profile/al-murphy.bsky.social/post/3lb7kho6uxk2p)."
+
+- date: "2023-12-04"
+  body: "Our [re-analysis paper](https://elifesciences.org/articles/90214) of the first single-cell RNA-seq Alzheimer's disease dataset is out in *eLife*! Check out an overview [here](https://twitter.com/Al_Murphy_/status/1642853631652253696)."
+
+- date: "2023-09-25"
+  body: "Presented my PhD work predicting the cell type-specific effects of genetic variants on the epigenome at the [Kipoi Summit](http://kipoi.org/summit/) for computational regulatory genomics."
+
+- date: "2023-07-29"
+  body: "Presented a session on single-cell genomics for Alzheimer's disease as part of [ADDI's](https://www.alzheimersdata.org/ad-workbench) Summer Learning Series."
+
+- date: "2022-12-22"
+  body: "Our [paper](https://www.nature.com/articles/s41467-022-35519-4) benchmarking differential expression methods for single-cell RNA-seq is out in *Nature Communications*! Check out our overview [here](https://twitter.com/Al_Murphy_/status/1495347819561029633)."
+
+- date: "2021-10-02"
+  body: "[MungeSumstats](https://github.com/neurogenomics/MungeSumstats), our software for rapid standardisation and quality control of GWAS or QTL summary statistics, is [now out](https://academic.oup.com/bioinformatics/article/37/23/4593/6380562) in *Bioinformatics*."
+
+- date: "2021-07-19"
+  body: "Thrilled to officially start my PhD with [Dr. Nathan Skene's group](https://www.neurogenomics.co.uk/) in the Department of Brain Sciences, Imperial College London as part of the [UK DRI](https://ukdri.ac.uk/)."

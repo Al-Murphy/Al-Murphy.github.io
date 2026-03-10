@@ -1,0 +1,19 @@
+{% if site.data.genomicsxai_blogs %}
+<aside class="sidebar__right">
+  <h3 class="sidebar__title">Genomics × AI Blog</h3>
+  <p class="sidebar__intro">Posts I've written for the <a href="https://genomicsxai.github.io/">Genomics × AI</a> community blog.</p>
+  <nav class="sidebar__nav">
+    <ul class="sidebar__list">
+      {% for post in site.data.genomicsxai_blogs %}
+      <li class="sidebar__item">
+        <a href="{{ post.url }}" target="_blank" rel="noopener" class="sidebar__link">{{ post.title }}</a>
+        <span class="sidebar__meta">{{ post.date | date: "%b %Y" }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <p class="sidebar__more">
+    <a href="https://genomicsxai.github.io/authors/alan-murphy/" target="_blank" rel="noopener">View all posts →</a>
+  </p>
+</aside>
+{% endif %}
