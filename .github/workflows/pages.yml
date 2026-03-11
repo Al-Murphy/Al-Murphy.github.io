@@ -34,10 +34,12 @@ jobs:
           python-version: "3.11"
 
       - name: Fetch dynamic content
+        env:
+          TWITTER_RSS_URL: ${{ secrets.TWITTER_RSS_URL }}
         run: |
           pip install -r scripts/requirements.txt
           python scripts/fetch_genomicsxai_blogs.py
-          python scripts/fetch_featured_tweets.py
+          python scripts/fetch_twitter_rss.py
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1

@@ -131,6 +131,8 @@ yandex_site_verification :
 # Social Sharing
 twitter:
   username               : &twitter
+# Twitter RSS feed URL for sidebar - create at https://rss.app/rss-feed/create-twitter-rss-feed
+twitter_rss_url            : "https://rss.app/feeds/ppeMgnC62RSCJCeN.xml"
 facebook:
   username               :
   app_id                 :
