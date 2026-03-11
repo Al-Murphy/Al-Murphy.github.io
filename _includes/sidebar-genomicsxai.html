@@ -17,10 +17,10 @@
   </p>
 
   <h3 class="sidebar__title sidebar__title--tweets">Recent Tweets</h3>
-  {% if site.data.twitter_rss %}
-  <nav class="sidebar__nav">
+  {% if site.data.tweets %}
+  <nav class="sidebar__nav sidebar__nav--tweets">
     <ul class="sidebar__list">
-      {% for tweet in site.data.twitter_rss %}
+      {% for tweet in site.data.tweets %}
       <li class="sidebar__item">
         <a href="{{ tweet.url }}" target="_blank" rel="noopener" class="sidebar__link">{{ tweet.title }}</a>
         <span class="sidebar__meta">{{ tweet.date | date: "%b %Y" }}</span>

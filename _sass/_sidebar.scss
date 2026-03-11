@@ -146,6 +146,11 @@
   border-top: 1px solid $border-color;
 }
 
+.sidebar__right .sidebar__nav--tweets {
+  max-height: 280px;
+  overflow-y: auto;
+}
+
 
 /*
    Author profile and links
