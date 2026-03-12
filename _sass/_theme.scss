@@ -1,0 +1,204 @@
+/* ==========================================================================
+   THEME - Light & Dark Mode
+   ========================================================================== */
+
+:root {
+  --bg-color: #{$background-color};
+  --text-color: #{$text-color};
+  --border-color: #{$border-color};
+  --masthead-bg: #fff;
+  --masthead-link: #{$masthead-link-color};
+  --masthead-link-hover: #{$masthead-link-color-hover};
+  --footer-bg: #{$lighter-gray};
+  --footer-text: #{mix(#fff, $gray, 25%)};
+  --code-bg: #{$code-background-color};
+  --link-color: #{$link-color};
+  --link-hover: #{$link-color-hover};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #1a1a2e;
+    --text-color: #eaeaea;
+    --border-color: #2d2d44;
+    --masthead-bg: #16213e;
+    --masthead-link: #b8c5d6;
+    --masthead-link-hover: #eaeaea;
+    --footer-bg: #0f0f1a;
+    --footer-text: #9ca3af;
+    --code-bg: #0f0f1a;
+    --link-color: #6ea8fe;
+    --link-hover: #9ec5fe;
+  }
+}
+
+/* Apply theme variables */
+html {
+  background-color: var(--bg-color);
+}
+
+body {
+  color: var(--text-color);
+}
+
+.masthead {
+  background: var(--masthead-bg);
+  border-bottom-color: var(--border-color);
+}
+
+.page__footer {
+  background-color: var(--footer-bg);
+  border-top-color: var(--border-color);
+  color: var(--footer-text);
+}
+
+.page__footer .fas,
+.page__footer .fab,
+.page__footer .far,
+.page__footer .fal {
+  color: var(--footer-text);
+}
+
+.greedy-nav {
+  background: var(--masthead-bg);
+}
+
+.greedy-nav a {
+  color: var(--masthead-link);
+}
+
+.greedy-nav a:hover {
+  color: var(--masthead-link-hover);
+}
+
+/* Sidebar */
+.sidebar {
+  color: var(--text-color);
+}
+
+.sidebar a {
+  color: var(--link-color);
+}
+
+.sidebar a:hover {
+  color: var(--link-hover);
+}
+
+.sidebar__right {
+  color: var(--text-color);
+}
+
+.sidebar__right .sidebar__title,
+.sidebar__right .sidebar__intro,
+.sidebar__right .sidebar__link,
+.sidebar__right .sidebar__meta {
+  color: inherit;
+}
+
+.sidebar__right .sidebar__link:hover {
+  color: var(--link-hover);
+}
+
+.sidebar__right .sidebar__item {
+  border-bottom-color: var(--border-color);
+}
+
+.sidebar__right .sidebar__title--tweets {
+  border-top-color: var(--border-color);
+}
+
+/* Page content */
+.page__content {
+  color: var(--text-color);
+}
+
+.page__content a {
+  color: var(--link-color);
+}
+
+.page__content a:hover {
+  color: var(--link-hover);
+}
+
+.page__content h2 {
+  border-bottom-color: var(--border-color);
+}
+
+/* Forms & inputs */
+.greedy-nav__search-input,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+textarea {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+/* Code blocks */
+.highlight,
+pre,
+code {
+  background-color: var(--code-bg);
+  border-color: var(--border-color);
+}
+
+/* Tables */
+table {
+  border-color: var(--border-color);
+}
+
+/* Archive & list items */
+.archive__item-title a,
+.list__item a {
+  color: var(--link-color);
+}
+
+.archive__item-title a:hover,
+.list__item a:hover {
+  color: var(--link-hover);
+}
+
+/* Navigation dropdown */
+.greedy-nav__dropdown {
+  background: var(--masthead-bg);
+  border-color: var(--border-color);
+}
+
+.greedy-nav__dropdown a {
+  color: var(--text-color);
+}
+
+/* Search overlay */
+.greedy-nav__search-wrapper {
+  background: var(--masthead-bg);
+}
+
+/* Author avatar border */
+.author__avatar img {
+  border-color: var(--border-color);
+}
+
+/* Notices - use theme-aware backgrounds */
+.notice {
+  border-color: var(--border-color);
+}
+
+/* Blockquotes */
+blockquote {
+  border-left-color: var(--link-color);
+}
+
+/* Selection colors - invert for dark mode */
+@media (prefers-color-scheme: dark) {
+  ::selection {
+    color: #1a1a2e;
+    background: #eaeaea;
+  }
+
+  ::-moz-selection {
+    color: #1a1a2e;
+    background: #eaeaea;
+  }
+}
