@@ -1,0 +1,28 @@
+<button type="button" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">
+  <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true"><i class="fas fa-sun"></i></span>
+  <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true"><i class="fas fa-moon"></i></span>
+</button>
+<script>
+(function() {
+  var STORAGE_KEY = 'theme';
+  var btn = document.querySelector('.theme-toggle');
+  if (!btn) return;
+  function getTheme() {
+    try { return localStorage.getItem(STORAGE_KEY); } catch (e) { return null; }
+  }
+  function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme || '');
+    try { theme ? localStorage.setItem(STORAGE_KEY, theme) : localStorage.removeItem(STORAGE_KEY); } catch (e) {}
+  }
+  function init() {
+    var saved = getTheme();
+    if (saved) setTheme(saved);
+  }
+  init();
+  btn.addEventListener('click', function() {
+    var cur = document.documentElement.getAttribute('data-theme');
+    var next = cur === 'dark' ? 'light' : 'dark';
+    setTheme(next);
+  });
+})();
+</script>

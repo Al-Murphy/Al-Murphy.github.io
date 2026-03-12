@@ -16,11 +16,12 @@
   --link-hover: #{$link-color-hover};
 }
 
+/* System preference: dark mode */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #2a3f5f;
+  :root:not([data-theme]) {
+    --bg-color: #1a1a2e;
     --text-color: #eaeaea;
-    --border-color: #3d5270;
+    --border-color: #2d2d44;
     --masthead-bg: #16213e;
     --masthead-link: #b8c5d6;
     --masthead-link-hover: #eaeaea;
@@ -30,6 +31,36 @@
     --link-color: #6ea8fe;
     --link-hover: #9ec5fe;
   }
+}
+
+/* Manual override: dark mode */
+html[data-theme="dark"] {
+  --bg-color: #1a1a2e;
+  --text-color: #eaeaea;
+  --border-color: #2d2d44;
+  --masthead-bg: #16213e;
+  --masthead-link: #b8c5d6;
+  --masthead-link-hover: #eaeaea;
+  --footer-bg: #0f0f1a;
+  --footer-text: #9ca3af;
+  --code-bg: #0f0f1a;
+  --link-color: #6ea8fe;
+  --link-hover: #9ec5fe;
+}
+
+/* Manual override: light mode */
+html[data-theme="light"] {
+  --bg-color: #{$background-color};
+  --text-color: #{$text-color};
+  --border-color: #{$border-color};
+  --masthead-bg: #fff;
+  --masthead-link: #{$masthead-link-color};
+  --masthead-link-hover: #{$masthead-link-color-hover};
+  --footer-bg: #{$lighter-gray};
+  --footer-text: #{mix(#fff, $gray, 25%)};
+  --code-bg: #{$code-background-color};
+  --link-color: #{$link-color};
+  --link-hover: #{$link-color-hover};
 }
 
 /* Apply theme variables */
@@ -192,13 +223,23 @@ blockquote {
 
 /* Selection colors - invert for dark mode */
 @media (prefers-color-scheme: dark) {
-  ::selection {
-    color: #2a3f5f;
+  :root:not([data-theme]) ::selection {
+    color: #1a1a2e;
     background: #eaeaea;
   }
 
-  ::-moz-selection {
-    color: #2a3f5f;
+  :root:not([data-theme]) ::-moz-selection {
+    color: #1a1a2e;
     background: #eaeaea;
   }
+}
+
+html[data-theme="dark"] ::selection {
+  color: #1a1a2e;
+  background: #eaeaea;
+}
+
+html[data-theme="dark"] ::-moz-selection {
+  color: #1a1a2e;
+  background: #eaeaea;
 }

@@ -146,6 +146,69 @@
   border-top: 1px solid $border-color;
 }
 
+/* Theme toggle - bottom of left sidebar with big gap from content */
+.sidebar__theme-toggle {
+  margin-top: 4rem;
+  padding-top: 2rem;
+
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1em;
+    margin-top: 0;
+    padding-top: 0;
+    z-index: 15;
+  }
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: 1px solid $border-color;
+  border-radius: 50%;
+  background: var(--bg-color, $background-color);
+  color: var(--text-color, $text-color);
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+
+  &:hover {
+    background: var(--masthead-bg, #fff);
+    border-color: var(--border-color, $border-color);
+  }
+}
+
+.theme-toggle__icon--moon {
+  display: inline;
+}
+
+.theme-toggle__icon--sun {
+  display: none;
+}
+
+/* Show sun icon when in dark mode (click to switch to light) */
+[data-theme="dark"] .theme-toggle__icon--moon {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle__icon--sun {
+  display: inline;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) .theme-toggle__icon--moon {
+    display: none;
+  }
+
+  html:not([data-theme]) .theme-toggle__icon--sun {
+    display: inline;
+  }
+}
+
 .sidebar__right .sidebar__nav--tweets {
   max-height: 280px;
   overflow-y: auto;
