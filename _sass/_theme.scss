@@ -18,9 +18,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #1a1a2e;
+    --bg-color: #2a3f5f;
     --text-color: #eaeaea;
-    --border-color: #2d2d44;
+    --border-color: #3d5270;
     --masthead-bg: #16213e;
     --masthead-link: #b8c5d6;
     --masthead-link-hover: #eaeaea;
@@ -193,12 +193,12 @@ blockquote {
 /* Selection colors - invert for dark mode */
 @media (prefers-color-scheme: dark) {
   ::selection {
-    color: #1a1a2e;
+    color: #2a3f5f;
     background: #eaeaea;
   }
 
   ::-moz-selection {
-    color: #1a1a2e;
+    color: #2a3f5f;
     background: #eaeaea;
   }
 }
