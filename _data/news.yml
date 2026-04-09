@@ -1,3 +1,6 @@
+- date: "2026-04-08"
+  body: "Co-authored a research highlight in [*Cell Research*](https://www.nature.com/articles/s41422-026-01249-1) on AlphaGenome and predicting non-coding variant effects, with Masayuki Nagai and Peter Koo."
+
 - date: "2026-02-20"
   body: "Published a blog post on fine-tuning [AlphaGenome](https://genomicsxai.github.io/blogs/2026-002/) for MPRA and STARR-seq data on the Genomics x AI blog, highlighting the approach of treating sequence-to-function models as modular regulatory encoders leading to state-of-the-art results across perturbation assays."
 
