@@ -1,0 +1,16 @@
+---
+title: "Improving genomic deep learning models with perturbation data"
+collection: talks
+type: "Talk"
+talk_type: "Talk"
+permalink: /talks/2026-05-07-improving-genomic-deep-learning-perturbation
+venue: "Biology of Genomes 2026"
+date: 2026-05-07
+location: "Cold Spring Harbor Laboratory, NY"
+---
+
+Work conducted with Masayuki (Moon) Nagai (co-first), and Peter Koo. 
+
+Genomic deep learning models trained on DNA sequence have demonstrated substantial potential for predicting regulatory activity, interpreting noncoding variants, and designing synthetic regulatory elements. However, most existing genomic foundation models are trained almost exclusively on the human reference genome, limiting their exposure to regulatory diversity and impairing generalisation to unseen loci, novel cellular contexts, synthetic constructs, and disease-relevant variants. A common response has been to fine-tune these models on new datasets, such as personalised genomes paired with gene expression measurements. Yet this strategy introduces a fundamental limitation: catastrophic forgetting, in which previously learned regulatory knowledge is overwritten during adaptation to new data. Here, we demonstrate for the first time that fine-tuning Enformer, a widely used genomic foundation model, on personalised genomes leads to pervasive catastrophic forgetting across genome-wide regulatory predictions. More broadly, repeated fine-tuning yields a growing collection of specialised models, rather than updating a single model that accumulates regulatory knowledge over time.
+To address these challenges, we propose continual learning as a principled training framework for genomic models. Continual learning encompasses a class of methods, including experience replay, regularisation-based strategies, and dynamic architectures, that allow models to incorporate new regulatory data while preserving previously acquired knowledge. Rather than fragmenting into task-specific models through repeated fine-tuning, continual learning enables both forward transfer, in which prior knowledge facilitates learning on new loci or perturbations, and backward transfer, in which newly learned regulatory logic refines earlier predictions. We evaluate continual learning in two complementary settings: first, by adapting a large generalist model, Enformer, to CRISPRi-style perturbation screens of combinatorial cis-regulatory elements; and second, by adapting a specialist transcription initiation model, ProCapNet, to MPRA-style perturbation screens that mutagenise cis-regulatory elements. Across both settings, continual learning substantially mitigates catastrophic forgetting and improves generalisation to diverse forms of genetic variation and out-of-distribution prediction tasks. Together, these results indicate that continual learning offers a practical approach for incorporating newly generated functional genomics data into existing models without overwriting prior regulatory knowledge. By introducing continual learning into genomic modeling, we outline a training paradigm that aligns with the iterative nature of biological data generation and supports the development of shared, incrementally updatable models of gene regulation.
+
