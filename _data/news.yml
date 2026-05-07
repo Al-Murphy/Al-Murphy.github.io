@@ -1,5 +1,5 @@
 - date: "2026-05-07"
-  body: "Presented [Improving genomic deep learning models with perturbation data](/talks/2026-05-07-improving-genomic-deep-learning-perturbation/) at Biology of Genomes 2026, Cold Spring Harbor Laboratory."
+  body: "Presented Improving genomic deep learning models with perturbation data, our work on continual learning for genomics, at Biology of Genomes 2026, Cold Spring Harbor Laboratory."
 
 - date: "2026-04-08"
   body: "Co-authored a research highlight in [*Cell Research*](https://www.nature.com/articles/s41422-026-01249-1) on AlphaGenome and predicting non-coding variant effects, with Masayuki Nagai and Peter Koo."
