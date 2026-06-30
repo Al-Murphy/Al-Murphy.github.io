@@ -1,3 +1,6 @@
+- date: "2026-06-25"
+  body: "Published a blog post [benchmarking sequence-to-function models](https://genomicsxai.github.io/blogs/2026-007/) against CRISPRi enhancer-knockdown screens on the Genomics x AI blog, showing that leading models (including AlphaGenome and Borzoi) systematically underestimate distal enhancer effects, with the gap widening as enhancers get farther from their target genes."
+
 - date: "2026-05-07"
   body: "Presented Improving genomic deep learning models with perturbation data, our work on continual learning for genomics, at Biology of Genomes 2026, Cold Spring Harbor Laboratory."
 
