@@ -13,7 +13,7 @@ on:
   workflow_dispatch: # Allow manual trigger
 
 permissions:
-  contents: read
+  contents: write   # write needed for the keepalive commit (see build job)
   pages: write
   id-token: write
 
@@ -60,6 +60,22 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+
+      # GitHub disables scheduled workflows after 60 days with no repository
+      # commits. On scheduled runs, make a tiny empty commit ~weekly (Mondays)
+      # to reset that inactivity timer. The [skip ci] tag stops the resulting
+      # push from triggering a redundant build/deploy.
+      - name: Keepalive (reset scheduled-workflow inactivity timer)
+        if: github.event_name == 'schedule'
+        run: |
+          if [ "$(date -u +%u)" = "1" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit --allow-empty -m "chore: keepalive scheduled workflow [skip ci]"
+            git push
+          else
+            echo "Not a keepalive day (only commits on Mondays); skipping."
+          fi
 
   deploy:
     environment:

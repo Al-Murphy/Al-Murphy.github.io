@@ -14,7 +14,7 @@ redirect_from:
 &nbsp;
 
 <div style="text-align: justify">
-Hi, I'm Alan Murphy, a computational biologist conducting my postdoctoral research in <a href="https://koolab.cshl.edu/">Dr. Peter Koo's lab</a> at Cold Spring Harbor Laboratory. My research focuses on developing and refining <strong>sequence-to-function (seq2func) models</strong> that uncover the <strong>cis-regulatory code</strong> — the rules by which DNA sequence dictates gene regulatory activity — and that are interpretable, generalisable across contexts, and tightly coupled to experimental perturbations and functional readouts.
+Hi, I'm Alan Murphy, a computational biologist conducting my postdoctoral research in <a href="https://koolab.cshl.edu/">Dr. Peter Koo's lab</a> at Cold Spring Harbor Laboratory. I build <strong>sequence-to-function (seq2func) models</strong> of gene regulation — models that map DNA sequence to molecular and cellular activity — and I focus on making them <strong>reliable when it matters</strong>: when sequences are perturbed, when regulatory organisation is rearranged, or when the cellular context changes. My goal is to turn seq2func models from accurate pattern matchers into <strong>trustworthy, mechanistically informative platforms</strong> for interpreting non-coding variants, designing perturbation experiments, and engineering synthetic regulatory sequences.
 
 Beyond research, I co-created and serve as editor for the <a href="https://genomicsxai.github.io/">Genomics × AI</a> blog, a growing community hub highlighting methods and applications at the intersection of genomics and machine learning. This initiative reflects my dedication to <strong>scholarly leadership and knowledge sharing</strong> in computational biology.
 
@@ -22,17 +22,24 @@ Beyond research, I co-created and serve as editor for the <a href="https://genom
 
 &nbsp;
 
-## Research Vision & Impact
+## Research Vision
 
-I aim to uncover the <strong>cis-regulatory code</strong> — the rules by which DNA sequence dictates gene regulation — by developing <strong>interpretable, generalisable sequence-to-function (seq2func) models</strong>. My work integrates <strong>computational modeling and experimental perturbations</strong>, including functional assays, to systematically probe how regulatory sequences control cellular phenotypes.
+My research programme aims to build seq2func models that reveal how regulatory <strong>sequence, genomic context, and cellular state</strong> combine to determine context-specific gene expression — and that <strong>remain reliable under the conditions where they are actually used</strong>. State-of-the-art models achieve strong predictive performance on held-out genomic regions, but that alone does not establish that they have learned regulatory logic which stays valid when sequences are perturbed or when regulatory organisation is rearranged.
 
-Key goals of my research include:
+I frame model failures through the lens of <strong>distribution shift</strong>:
 
-- Building models that <strong>generalise across cell types and experimental contexts</strong>, enabling predictive insights beyond the training data.  
-- Improving <strong>interpretability</strong>, so that computational predictions reveal mechanistic principles of gene regulation.  
-- Developing <strong>open-access tools and resources</strong> to promote reproducibility and empower the genomics community.
+- <strong>Covariate shift</strong> — sequences or perturbations that are poorly represented in the training data.  
+- <strong>Concept shift</strong> — the same sequence behaving differently because the cellular context has changed.
 
-Through this approach, I seek to <strong>bridge predictive modeling with mechanistic understanding</strong>, advancing both fundamental insights into gene regulation and the methodological foundations of regulatory genomics.
+I diagnose these failures systematically and close them by learning from <strong>targeted perturbation experiments</strong> — discarding genome-wide knowledge where it misleads, and keeping predictions reliable even when perturbations shift the cell state itself.
+
+How reliably models handle these shifts ultimately determines their usefulness across the applications that depend on them:
+
+- <strong>Interpreting non-coding variants</strong> — predicting the functional consequences of regulatory genetic variation.  
+- <strong>Designing perturbation experiments</strong> that reveal cis-regulatory biology.  
+- <strong>Engineering synthetic regulatory sequences</strong> with tunable properties.
+
+Throughout, I develop <strong>open-access tools and resources</strong> to promote reproducibility and empower the genomics community.
 
 &nbsp;
 
