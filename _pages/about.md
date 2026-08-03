@@ -44,7 +44,7 @@ Throughout, I develop <strong>open-access tools and resources</strong> to promot
 &nbsp;
 
 <p class="home-button-row">
-  <a class="btn" href="/cv/" target="_blank" rel="noopener">Download CV</a>
+  <a class="btn" href="/cv/" target="_blank" rel="noopener">CV</a>
   <a class="btn" href="https://scholar.google.com/citations?user=oH1tIr0AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
   <a class="btn" href="https://genomicsxai.github.io/" target="_blank" rel="noopener">Genomics × AI Blog</a>
 </p>

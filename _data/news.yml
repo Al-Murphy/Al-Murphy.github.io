@@ -1,3 +1,6 @@
+- date: "2026-07-27"
+  body: "Our review, [Toward generalizable and interpretable AI in regulatory genomics](https://www.nature.com/articles/s41588-026-02670-3), is out in *Nature Genetics*! Sequence-to-function models do well on held-out genomic regions but generalise inconsistently across genetic variation and cellular contexts. We ask why, and argue a way forward with targeted perturbation experiments feeding back into iterative model refinement."
+
 - date: "2026-06-25"
   body: "Published a blog post [benchmarking sequence-to-function models](https://genomicsxai.github.io/blogs/2026-007/) against CRISPRi enhancer-knockdown screens on the Genomics x AI blog, showing that leading models (including AlphaGenome and Borzoi) systematically underestimate distal enhancer effects, with the gap widening as enhancers get farther from their target genes."
 
