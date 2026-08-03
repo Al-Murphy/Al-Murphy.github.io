@@ -39,6 +39,54 @@ def parse_date(text: str) -> Optional[str]:
     return None
 
 
+def clean_text(text: str) -> str:
+    """Collapse a scraped fragment onto one line."""
+    return re.sub(r"\s+", " ", (text or "").replace("\xa0", " ")).strip()
+
+
+def extract_title(anchor) -> str:
+    """
+    The card's heading only.
+
+    On the author page each card is wrapped *entirely* in its link, so the
+    anchor's own text also carries the "Blog Post" label, the date and the read
+    time. Read the heading element instead, and only fall back to scrubbing the
+    anchor text if the markup ever changes.
+    """
+    card = anchor.find_parent(class_="article-card") or anchor
+    heading = card.select_one(".article-card__title") or card.find(["h1", "h2", "h3", "h4"])
+    if heading:
+        return clean_text(heading.get_text())
+
+    text = clean_text(anchor.get_text(separator=" "))
+    text = re.sub(r"^Blog Post\s*", "", text)
+    text = re.sub(r"\s*(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),.*$", "", text)
+    text = re.sub(r"\s*·?\s*\d+\s*minutes?\s*read\s*$", "", text, flags=re.I)
+    return text.strip(" ·")
+
+
+def extract_date(anchor, url: str) -> Optional[str]:
+    """Publication date, preferring the card's <time datetime="...">."""
+    node = anchor.find_parent(class_="article-card") or anchor
+    for _ in range(5):
+        if not node:
+            break
+        time_el = node.find("time", datetime=True)
+        if time_el and re.match(r"\d{4}-\d{2}-\d{2}", time_el.get("datetime", "")):
+            return time_el["datetime"][:10]
+        for s in node.find_all(string=True):
+            if re.search(r"\d{4}", str(s)) and re.search(
+                r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)", str(s), re.I
+            ):
+                parsed = parse_date(str(s))
+                if parsed:
+                    return parsed
+        node = node.parent
+    # Last resort: the year in the slug, e.g. /blogs/2026-003/
+    match = re.search(r"/blogs/(\d{4})-\d+/", url)
+    return f"{match.group(1)}-01-01" if match else None
+
+
 def extract_posts(html: str):
     """Extract blog post entries from the author page HTML."""
     soup = BeautifulSoup(html, "html.parser")
@@ -62,7 +110,7 @@ def extract_posts(html: str):
         if url in seen_urls:
             continue
 
-        title = (a.get_text() or "").strip()
+        title = extract_title(a)
         if not title or len(title) < 5:
             continue
 
@@ -70,48 +118,22 @@ def extract_posts(html: str):
         if "Genomics" in title and "AI" in title and len(title) < 25:
             continue
 
-        # Try to find date - look in parent/siblings
-        date_str = None
-        parent = a.parent
-        for _ in range(5):
-            if not parent:
-                break
-            # Look for <time datetime="...">
-            time_el = parent.find("time", datetime=True)
-            if time_el:
-                dt = time_el.get("datetime", "")
-                if re.match(r"\d{4}-\d{2}-\d{2}", dt):
-                    date_str = dt[:10]
-                    break
-            # Look for date-like text
-            for s in parent.find_all(string=True):
-                if re.search(r"\d{4}", str(s)) and re.search(r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)", str(s), re.I):
-                    parsed = parse_date(str(s))
-                    if parsed:
-                        date_str = parsed
-                        break
-            if date_str:
-                break
-            parent = parent.parent
-
-        # Fallback: extract from URL (e.g. /blogs/2026-003/ -> 2026)
-        if not date_str:
-            match = re.search(r"/blogs/(\d{4})-(\d+)/", url)
-            if match:
-                year, num = match.groups()
-                date_str = f"{year}-01-01"  # Approximate
-
         posts.append({
             "title": title,
             "url": url.rstrip("/") + "/",
-            "date": date_str or "2026-01-01",
-            "excerpt": "",
+            "date": extract_date(a, url) or "2026-01-01",
         })
         seen_urls.add(url)
 
     # Sort by date descending
     posts.sort(key=lambda p: p["date"], reverse=True)
     return posts
+
+
+def yaml_quote(value: str) -> str:
+    """Double-quoted YAML scalar. (repr() would emit single quotes, in which
+    YAML treats a backslash as a literal character rather than an escape.)"""
+    return '"' + str(value).replace("\\", "\\\\").replace('"', '\\"') + '"'
 
 
 def write_yaml(posts):
@@ -123,11 +145,9 @@ def write_yaml(posts):
         "",
     ]
     for p in posts:
-        lines.append("- title: " + repr(p["title"]))
-        lines.append('  url: "' + p["url"] + '"')
-        lines.append('  date: "' + p["date"] + '"')
-        if p.get("excerpt"):
-            lines.append('  excerpt: "' + p["excerpt"].replace('"', '\\"') + '"')
+        lines.append("- title: " + yaml_quote(p["title"]))
+        lines.append("  url: " + yaml_quote(p["url"]))
+        lines.append("  date: " + yaml_quote(p["date"]))
         lines.append("")
     OUTPUT_FILE.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
@@ -143,8 +163,10 @@ def main() -> int:
         print(f"Wrote {len(posts)} posts to {OUTPUT_FILE}")
         return 0
     except Exception as e:
-        print(f"Error: {e}", file=sys.stderr)
-        return 1
+        # Keep the existing file and exit 0: a blip fetching the blog should
+        # never fail the deploy.
+        print(f"Error: {e}. Keeping existing file.", file=sys.stderr)
+        return 0
 
 
 if __name__ == "__main__":
