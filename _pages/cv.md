@@ -11,21 +11,15 @@ redirect_from:
 
 ## Professional Summary
 <hr>
-<div style="text-align: justify"><font size="3">I am a computational biologist and postdoctoral researcher at Cold Spring Harbor Laboratory, working in Prof. Peter Koo's group. My research focuses on developing sequence-to-function models to uncover the <i>cis</i>-regulatory code, with an emphasis on interpretability, generalisation across biological contexts, and integration with experimental perturbations and functional readouts. I am particularly interested in bridging predictive modelling with mechanistic understanding, using machine learning to derive biologically meaningful representations of regulatory sequence function. More broadly, my work aims to advance principled approaches for modelling high-dimensional genomic data, with a focus on robustness, reproducibility, and cross-context inference.</font></div>
+<div style="text-align: justify"><font size="3">I am a computational biologist and postdoctoral researcher at Cold Spring Harbor Laboratory, working in Prof. Peter Koo's group. I build sequence-to-function models of gene regulation and work on making them reliable where they are currently weakest: on genetic variants, on designed regulatory elements, and in the cell types where disease acts. Two causes account for that weakness, and my work addresses each — the <i>sequence</i>, because a rare variant or a designed element is unlike anything in the training data, and the <i>cell</i>, because an element is only active where the regulators that drive it are present. I measure where current models fall short, build models that read a measurement of the cell alongside the sequence, and use perturbation experiments to correct them. Throughout, I develop open-access tools and resources, with an emphasis on reproducibility and on evaluation that reflects how these models are actually used.</font></div>
 
 ## Core Expertise
 <hr>
-* Sequence-to-function modelling for regulatory genomics
-* Interpretable machine learning
-* Genomic foundation & language models
-* Active learning & lab-in-the-loop systems
-* Continual learning for genomics
-* Representation learning in biological systems
-* Genetic variant effect prediction
-* Gene expression modelling
-* Epigenetic data modelling
-* Single-cell genomic analysis
-* Multi-modal genomic data integration
+* <b>Sequence-to-function modelling:</b> genomic deep learning, foundation and language models; genetic variant effect prediction; regulatory sequence design; model interpretability and representation learning.
+* <b>Learning from perturbation experiments:</b> continual learning and iterative model refinement; reporter assays (MPRA, STARR-seq); CRISPR interference screens; active learning and lab-in-the-loop design.
+* <b>Context-aware and multi-modal modelling:</b> cell type-specific epigenomic prediction; gene expression modelling from chromatin; single-cell and perturbation data (scRNA-seq, Perturb-seq); multi-modal data integration.
+* <b>Evaluation and benchmarking:</b> evaluation design for generalisation across sequences and cellular contexts; benchmarking models against functional genomics screens.
+* <b>Software and reproducibility:</b> open-source scientific software (R/Bioconductor, Python/JAX); reproducible research workflows and openly released models, data and protocols.
 
 ## Experience
 <hr>
@@ -62,7 +56,7 @@ Selected first-author articles:
 
 ## Selected Publications
 <hr>
-  <ul>{% for post in site.publications %}
+  <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   

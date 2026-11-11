@@ -14,32 +14,42 @@ redirect_from:
 &nbsp;
 
 <div style="text-align: justify">
-Hi, I'm Alan Murphy, a computational biologist conducting my postdoctoral research in <a href="https://koolab.cshl.edu/">Dr. Peter Koo's lab</a> at Cold Spring Harbor Laboratory. I build <strong>sequence-to-function (seq2func) models</strong> of gene regulation — models that map DNA sequence to molecular and cellular activity — and I focus on making them <strong>reliable when it matters</strong>: when sequences are perturbed, when regulatory organisation is rearranged, or when the cellular context changes. My goal is to turn seq2func models from accurate pattern matchers into <strong>trustworthy, mechanistically informative platforms</strong> for interpreting non-coding variants, designing perturbation experiments, and engineering synthetic regulatory sequences.
+<p>Hi, I'm Alan Murphy, a computational biologist conducting my postdoctoral research in <a href="https://koolab.cshl.edu/">Dr. Peter Koo's lab</a> at Cold Spring Harbor Laboratory. I build <strong>sequence-to-function (seq2func) models</strong> of gene regulation — models that map DNA sequence to measured regulatory activity — and I work on making them <strong>reliable where they are currently weakest</strong>: on genetic variants, on designed regulatory elements, and in the cell types where disease acts.</p>
 
-Beyond research, I co-created and serve as editor for the <a href="https://genomicsxai.github.io/">Genomics × AI</a> blog, a growing community hub highlighting methods and applications at the intersection of genomics and machine learning. This initiative reflects my dedication to <strong>scholarly leadership and knowledge sharing</strong> in computational biology.
+<p>Most variants associated with common disease fall outside protein-coding sequence, where their effect on gene regulation is usually unknown, and the same sequence behaves differently from one cell type to the next. Models that read <strong>both the sequence and the cell</strong> offer a route to interpreting those variants and to designing regulatory elements active in a single cell type — but only if their predictions hold outside the data they were trained on. Establishing where they do, extending them where they do not, and using them to design elements for the cell types where disease acts is the programme I will build my laboratory around.</p>
 
+<p>Beyond research, I co-created and serve as editor for the <a href="https://genomicsxai.github.io/">Genomics × AI</a> blog, a growing community hub highlighting methods and applications at the intersection of genomics and machine learning. This initiative reflects my dedication to <strong>scholarly leadership and knowledge sharing</strong> in computational biology.</p>
 </div>
 
 &nbsp;
 
-## Research Vision
+## Research Programme
 
-My research programme aims to build seq2func models that reveal how regulatory <strong>sequence, genomic context, and cellular state</strong> combine to determine context-specific gene expression — and that <strong>remain reliable under the conditions where they are actually used</strong>. State-of-the-art models achieve strong predictive performance on held-out genomic regions, but that alone does not establish that they have learned regulatory logic which stays valid when sequences are perturbed or when regulatory organisation is rearranged.
+<div style="text-align: justify">
+<p>Two obstacles stand between a disease locus and a mechanism: <strong>which variant is causal</strong>, and <strong>which cell type it acts in</strong>. Seq2func models could resolve both — a variant's effect is the difference between scoring its two alleles, and a promising regulatory element is one the model scores highly in the target cell type — yet they are least reliable in exactly these settings. Two causes account for that, and my laboratory will be organised around measuring and correcting each: the <strong>sequence</strong>, because a rare variant or a designed element is unlike anything in the training data, and the <strong>cell</strong>, because an element is only active where the regulators that drive it are present.</p>
+</div>
 
-I frame model failures through the lens of <strong>distribution shift</strong>:
+<div class="aim-grid">
+  <div class="aim-card">
+    <span class="aim-card__label">Aim 1</span>
+    <h3 class="aim-card__title">Establish where regulatory models can be trusted</h3>
+    <p class="aim-card__body">Accuracy is reported as a single number over held-out regions of the genome, which says little about a variant in the cell type where a disease acts. I will measure how accuracy falls across classes of sequence and as cellular context moves away from a model's training data. The result is a public resource reporting the accuracy to expect for a given model, sequence and cell type.</p>
+  </div>
+  <div class="aim-card">
+    <span class="aim-card__label">Aim 2</span>
+    <h3 class="aim-card__title">Correct models with perturbation data</h3>
+    <p class="aim-card__body">Genome-wide profiling shows which sequence features accompany regulatory activity; perturbation experiments show what changing one of them actually does. My laboratory will refine models on the full body of published reporter and CRISPR interference screens, and establish whether a correction learned in one cell type transfers to the cell types where disease acts.</p>
+  </div>
+  <div class="aim-card">
+    <span class="aim-card__label">Aim 3</span>
+    <h3 class="aim-card__title">Design regulatory elements selective for a chosen cell type</h3>
+    <p class="aim-card__body">Gene therapies can restrict a transgene to one cell type through the regulatory element placed in front of it, but candidates must be narrowed down long before anything is synthesised. I will build models that score candidate elements across hundreds of cell types, so an element can be designed for one and screened against all the others, then validated experimentally.</p>
+  </div>
+</div>
 
-- <strong>Covariate shift</strong> — sequences or perturbations that are poorly represented in the training data.  
-- <strong>Concept shift</strong> — the same sequence behaving differently because the cellular context has changed.
-
-I diagnose these failures systematically and close them by learning from <strong>targeted perturbation experiments</strong> — discarding genome-wide knowledge where it misleads, and keeping predictions reliable even when perturbations shift the cell state itself.
-
-How reliably models handle these shifts ultimately determines their usefulness across the applications that depend on them:
-
-- <strong>Interpreting non-coding variants</strong> — predicting the functional consequences of regulatory genetic variation.  
-- <strong>Designing perturbation experiments</strong> that reveal cis-regulatory biology.  
-- <strong>Engineering synthetic regulatory sequences</strong> with tunable properties.
-
-Throughout, I develop <strong>open-access tools and resources</strong> to promote reproducibility and empower the genomics community.
+<div style="text-align: justify">
+<p>Throughout, the models, datasets and evaluation protocols behind this work are <strong>released openly</strong>. The longer goal is a model that can be trusted on a variant nobody has assayed, in a cellular state nobody has screened.</p>
+</div>
 
 &nbsp;
 
@@ -68,7 +78,7 @@ Throughout, I develop <strong>open-access tools and resources</strong> to promot
 </p>
 <div class="publications-scroll">
   <ul>
-    {% for post in site.publications %}
+    {% for post in site.publications reversed %}
       {% include archive-single-cv.html %}
     {% endfor %}
   </ul>
