@@ -14,11 +14,11 @@ redirect_from:
 &nbsp;
 
 <div style="text-align: justify">
-<p>Hi, I'm Alan Murphy, a computational biologist conducting my postdoctoral research in <a href="https://koolab.cshl.edu/">Dr. Peter Koo's lab</a> at Cold Spring Harbor Laboratory. I build <strong>sequence-to-function (seq2func) models</strong> of gene regulation — models that map DNA sequence to measured regulatory activity — and I work on making them <strong>reliable where they are currently weakest</strong>: on genetic variants, on designed regulatory elements, and in the cell types where disease acts.</p>
+<p>Hi, I'm Alan Murphy, a computational biologist conducting my postdoctoral research in <a href="https://koolab.cshl.edu/">Dr. Peter Koo's lab</a> at Cold Spring Harbor Laboratory. I build <strong>sequence-to-function (seq2func) models</strong> of gene regulation, which map DNA sequence to measured regulatory activity, and I work on making them <strong>reliable where they are currently weakest</strong>: on genetic variants, on designed regulatory elements, and in the cell types where disease acts.</p>
 
 <p>Most variants associated with common disease fall outside protein-coding sequence, where their effect on gene regulation is usually unknown, and the same sequence behaves differently from one cell type to the next. Models that read <strong>both the sequence and the cell</strong> offer a route to interpreting those variants and to designing regulatory elements active in a single cell type — but only if their predictions hold outside the data they were trained on. Establishing where they do, extending them where they do not, and using them to design elements for the cell types where disease acts is the programme I will build my laboratory around.</p>
 
-<p>Beyond research, I co-created and serve as editor for the <a href="https://genomicsxai.github.io/">Genomics × AI</a> blog, a growing community hub highlighting methods and applications at the intersection of genomics and machine learning. This initiative reflects my dedication to <strong>scholarly leadership and knowledge sharing</strong> in computational biology.</p>
+<p>Beyond research, I co-created and serve as editor for the <a href="https://genomicsxai.github.io/">Genomics × AI</a> blog, a community hub for work at the intersection of genomics and machine learning. It publishes short technical pieces that rarely find a journal home: tutorials, negative results and incremental findings, reviewed openly on GitHub.</p>
 </div>
 
 &nbsp;
@@ -26,7 +26,7 @@ redirect_from:
 ## Research Programme
 
 <div style="text-align: justify">
-<p>Two obstacles stand between a disease locus and a mechanism: <strong>which variant is causal</strong>, and <strong>which cell type it acts in</strong>. Seq2func models could resolve both — a variant's effect is the difference between scoring its two alleles, and a promising regulatory element is one the model scores highly in the target cell type — yet they are least reliable in exactly these settings. Two causes account for that, and my laboratory will be organised around measuring and correcting each: the <strong>sequence</strong>, because a rare variant or a designed element is unlike anything in the training data, and the <strong>cell</strong>, because an element is only active where the regulators that drive it are present.</p>
+<p>Two obstacles stand between a disease locus and a mechanism. The first is <strong>which variant is causal</strong>: linkage leaves dozens of variants in a locus indistinguishable by association. The second is <strong>which cell type it acts in</strong>: an element carrying a risk variant can be essential in one cell type while its neighbours are unaffected. Seq2func models could resolve both. A variant's effect is the difference between scoring its two alleles, and a promising regulatory element is one the model scores highly in the target cell type. Yet they are least reliable in exactly these settings. Two causes account for that, and my laboratory will be organised around measuring and correcting each: the <strong>sequence</strong>, because a rare variant or a designed element is unlike anything in the training data, and the <strong>cell</strong>, because an element is only active where the regulators that drive it are present.</p>
 </div>
 
 <div class="aim-grid">
